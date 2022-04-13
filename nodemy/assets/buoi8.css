@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.row{
+    height: 100px;
+}
+div{
+    background-color: red;
+    border: 1px solid black;
+}
+/* .col-3{
+    background-color: yellow;
+    border: 1px solid black;
+} */

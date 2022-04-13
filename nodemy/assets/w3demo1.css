@@ -1,0 +1,322 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.container {
+  max-width: 100%;
+  padding: 0%;
+}
+.leftheader {
+  display: flex;
+}
+.leftheader div,
+.rightheader i {
+  padding: 12px 24px;
+}
+.leftheader div:hover,
+.list li:hover {
+  background-color: #ccc;
+  cursor: pointer;
+  color: black;
+}
+.header {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.rightheader:hover {
+  background-color: #f44336;
+}
+.menu {
+  position: relative;
+}
+.list {
+  position: absolute;
+  background-color: yellow;
+  left: 0px;
+  list-style: none;
+  top: 100%;
+  color: rgb(153, 12, 94);
+  display: none;
+}
+.list li {
+  width: 160px;
+  padding: 8px 16px;
+}
+.menu:hover .list {
+  display: block;
+}
+.baner {
+  position: relative;
+  margin-top: 40px;
+  width: 100%;
+}
+.chu {
+  position: absolute;
+  left: 50%;
+  bottom: 80px;
+  color: red;
+  font-size: 20px;
+  transform: translate(-50%, 0);
+}
+.chu1 {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  color: red;
+  font-size: 20px;
+  transform: translate(-50%, 0);
+}
+.containerb2 {
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+  padding: 64px 16px;
+}
+.tourdate {
+ 
+  padding: 64px 16px;
+  max-width: 900px;
+}
+.hd1 {
+  letter-spacing: 4px;
+  font-weight: 400;
+  text-align: center;
+}
+.hd2 {
+  text-align: center;
+  opacity: 0.6;
+  margin: 15px 0px;
+}
+.contentb2 {
+  margin: 15px 0px;
+  text-align: justify;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.contentduoib2 {
+  padding: 32px 0px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.textanhb2 {
+  margin: 15px auto;
+  text-align: center;
+}
+.anhb2 {
+  width: 33.33%;
+}
+.anhnhob2 {
+  width: 60%;
+  margin-bottom: 16px;
+}
+
+.headerb3 {
+  margin: 0 -16px 0 0;
+  border: none;
+  background-color: white;
+  padding-left: 0;
+}
+.headerb3 li {
+  padding: 8px 16px;
+  list-style: none;
+  border-bottom: #ccc 1px solid;
+}
+.span1 {
+  padding: 0px 8px;
+  margin-left: 16px;
+  background-color: red;
+}
+.span2 {
+  margin-right: 16px;
+  padding: 0px 8px;
+  text-align: right;
+  display: block;
+  background-color: black;
+  color: #ccc;
+  border-radius: 50%;
+}
+.tourdate {
+  background-color: black;
+}
+.so3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.span2:hover {
+  cursor: pointer;
+}
+.ticker {
+  margin: 0 -16px;
+  padding: 32px 8px;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+}
+.ticker1 {
+  margin: 0 8px;
+  margin-bottom: 16px;
+  width: 32%;
+
+  background-color: white;
+}
+.newyork {
+  padding: 0 16px;
+  background-color: white;
+  color: black;
+}
+.newyork p {
+  margin: 15px 0px;
+}
+.contact {
+  margin: auto;
+  padding: 64px 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 800px;
+}
+.contactleft p {
+  margin: 10px auto;
+}
+.contactright input {
+  margin: 10px 10px;
+}
+.send {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+.footer {
+  margin: 20px auto;
+}
+.footer p {
+  text-align: center;
+}
+.footer p i {
+  margin-right: 20px;
+}
+.blacktourdate {
+  background-color: black;
+
+  display: flex;
+  justify-content: center;
+}
+.modal-content {
+  width: 900px;
+}
+.modal-header {
+  padding: 32px 16px;
+  justify-content: center;
+  border-bottom: none;
+  display: block;
+  background-color: #009688;
+  color: white;
+}
+.modal-dialog {
+  margin: auto;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  top: 85px;
+}
+
+h2 {
+  margin: 10px 0;
+  letter-spacing: 4px;
+  text-align: center;
+}
+.modal-title {
+  text-align: center;
+}
+.ticketcontainer {
+  padding: 0 16px;
+}
+.modal-footer {
+  border-top: none;
+}
+.inputticket {
+  width: 100%;
+  padding: 8px;
+  border: #ccc 1 px solid;
+}
+.ticketpay {
+  width: 100%;
+  margin: 16px 0;
+  padding: 16px;
+  border: none;
+  color: #fff;
+  background-color: #009688;
+}
+.ticketpay:hover {
+  background-color: #ccc;
+  color: black;
+}
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+}
+button.btn.btn-primary:hover {
+  background-color: #ccc;
+  color: black;
+}
+.daux {
+  position: absolute;
+  right: 0;
+  padding: 8px 16px;
+  top: 0;
+}
+.daux:hover {
+  background-color: #ccc;
+  color: black;
+}
+.nutmua {
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+.footer img{
+  width: 100%;
+}
+.mobile{
+  display: none;
+}
+.contactleft i{
+  display: inline-block;
+  font-size: 20px;
+}
+@media screen and (max-width:900px) {
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+  .contentduoib2 ,.ticker ,.contact{
+    flex-direction: column;
+  }
+  .anhb2 ,.ticker1{
+    width: 100%;
+  }
+  .contactright input{
+    width: 100%;
+  }
+}

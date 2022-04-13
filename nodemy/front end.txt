@@ -1,0 +1,309 @@
+head              dùng để thiết lập cho giao diện
+body              thết kế giao diện
+
+các thẻ html
+<head>            thẻ mở
+</head>           thẻ đóng
+
+format            con lùi vào 1 tab so với cha
+
+
+title             thay đổi tên của tab giao diện
+link - favicon    thay đổi icon của tab giao diện
+
+        link online             
+        link tuyệt đối          ghép giữa đường dẫn thư mục và tên file
+
+        link tương dối          ./    lấy đường dẫn dựa trên địa chỉ của file đang code
+                                ../
+code đọc từ trên xuống dưới
+
+=============================================================
+h                       thẻ tiêu đề
+                        chữ to, nét đậm, chiếm hết ròng
+
+p                       thẻ lưu 1 đoạn văn
+                        chiếm hết ròng
+
+br                      thẻ ngắt ròng
+
+span                    chỉ hỗ trợ để trên thuộc tính
+                        tương tự đoạn text không có thẻ
+
+b/i/u                   đậm/ nghiêng/ gạch chân        
+
+center                  thẻ căn giữa
+
+các thẻ HTML có tính kế thừa
+
+=================================================================
+
+img                     thẻ hiển thị ảnh
+      src         dẫn nguồn ảnh
+      alt         chữ thay thế nếu ảnh lỗi
+
+a                       dẫn link
+                        khi click vào thì sẽ đưa đến địa chỉ được quy định trong link
+
+=================================================================
+
+input
+
+type = text             nhập text ngắn trên 1 ròng
+
+type = password         nhập text ngắn trên 1 ròng
+                        ẩn nội dun g
+
+textarea                nhập đoạn văn, nhập trên nhiều ròng       
+
+type = date             chọn ngày tháng
+
+type = file             chọn file upload
+
+type = radio            trắc nghiệm, chọn 1 đáp án duy nhất
+                        lưu ý set name
+
+type = checkbox         trắc nghiệm, chọn tùy ý  
+
+select / option         lựa chọn 1 đáp án duy nhất
+                        chọn sẵn 1 đáp án
+
+====================================================
+
+table                   thẻ tạo bảng
+
+tr                      ròng trong bảng
+                        table row
+
+td                      data trong rong
+                        table data
+                        lưu ý table, tr, td phải đi với nhau
+
+th                      table heading                        
+                        thẻ tạo ô tiêu đề
+                        chữ đậm, căn giữa
+=======================================================
+=======================================================
+Các cách thêm style
+
+C1 
+  dùng attribute style
+  
+  style='key: value ; key2 : value2'
+
+  code đọc từ trên xuống, trái qua phải
+  => nội dung sau sẽ ghi đè nội dung trước
+
+  thêm style trực tiếp và thẻ HTML
+
+C2 internal style: thêm style nội bộ
+  dùng thẻ style để thêm thuộc tính
+
+  cú pháp
+  <style>
+    the {                     áp dụng style cho tất cả các thẻ cùng tên trên giao diện
+      key: value ; 
+      key2 : value2
+    }
+
+    .class{                   áp dụng style cho tất cả thẻ cùng tên class
+      ....
+    }
+
+    #id{                      áp dụng style cho thẻ có id khớp với điều kiện
+      ....                    không được phép trùng tên id trên giao diện HTML
+    }
+  </style>  
+
+  trỏ càng cụ thể thì ưu tiên càng cao
+ !important > inline style > #id > .class > thẻ > * > kế thừa
+
+C3: thêm style bằng file css : external style 
+
+tạo file .css
+<link rel="stylesheet" href="./index.css">
+
+cú pháp giống internal style
+
+==============================================================
+
+background                    đổi màu nền
+color                         đổi màu chữ
+
+font-size                     điều chỉnh cỡ chữ
+                              đơn vị px, ...
+
+font-weight                   điều chỉnh chữ đậm, chữ nhạt
+
+font-style                    italic: nghiêng
+                              normal: bình thường
+
+text-decoration         
+            overline: gạch trên
+            line-through: gạch giữa
+            under-line: gạch dưới      
+
+border : độ dày / nét vẽ / màu
+border: 1px solid black                        
+
+border-collapse: collapse     gộp border của table thành 1
+
+text-align                    căn lề chữ
+                              lưu ý cần có khoảng trống thừa để căn chỉnh
+            left/right// :        trái / phải 
+            justfy                căn lề 2 bên
+            center                giữa
+
+text-transform                chuyển đổi chữ hoa, chữ thường            
+            uppercase         tất cả viết hoa
+            lowercase         tất cả viết thường
+            capitalize        viết hoa chữ đầu
+
+font-family:                  thay đổi font chữ    
+
+@font-face {
+  font-family: ten;           đặt tên cho font chữ mới
+  src: url(link);             liên kết đến file font chữ
+}
+==========================================================
+content                   nội dung bên trong 1 thẻ
+
+border                    đường viền bao ngoài thẻ
+
+padding                   khoảng trống giữa content và border
+                          padding thuộc quyền sở hữu của thẻ
+
+margin                    khoảng trống dùng chung từ border ra ngoài
+                          margin không thuộc sở hữu của thẻ nào
+
+border: độ dày / net vẽ / màu sắc
+                          thêm border 4 mặt chung setting
+
+border-top                thêm border trển đỉnh
+border-bottom             thêm border dưới đáy
+border-left               thêm border bên trái
+border-right              thêm border bên phải
+
+border-radius             bo tròn đường viền
+
+==================================================
+
+padding: 10px             set padding chung 4 mặt
+
+padding: 10px 20px        set padding trên dưới / trái phải
+
+padding: 10 20 30 40      set padding theo chiều kim đồng hồ bắt đầu từ top
+
+==================================================
+
+margin: 10px              margin 4 mặt bằng nhau
+
+margin: 10 20             set margin trên dưới / trái phải
+
+margin: 10 20 30 40       set margin theo chiều kim đồng hồ bắt đầu từ top
+
+margin: auto              tự động chia đều margin
+                          dùng khi có margin thừa
+
+width                     điều chỉnh chiều rộng
+                          nếu dùng đơn vị % thì sẽ tỷ lệ với kích thước của thẻ cha gần nhấn
+
+height                    điều chỉnh chiều cao
+
+box-sizing: border-box    width, height sẽ gồm cả border, padding, content
+
+====================================================
+display                   điều chỉnh hiển thị
+
+display: block            hiển thị dạng khối
+                          chiếm chỗ nguyên cả ròng
+                          khoảng thừa được thế bằng margin
+
+display: inline           hiển thị dạng text
+                          chiến chỗ đúng bằn nội dung bên trong
+                          không dùng đc width, height   
+
+display: inline-block     giống inline nhưng dùng được width, height
+                          không chiến cả ròng nữa    
+
+display: none             hủy hiển thị
+                          mất hoàn toàn khỏi giao diện
+
+visible:hidden            tàng hình 
+                          vẫn hiển thị trên giao diện
+
+============================================================
+
+opacity:                  làm mờ, nhìn xuyên thấu
+
+filter:                   đổi hiệu ứng cho img
+
+cursor:                   đổi con trỏ
+
+hover:                    style chỉ áp dụng khi đưa con trỏ vào
+the:hover{...}
+.class:hover{...}
+#id:hover{...}
+=========================================================
+position                    sử dụng để thay đổi vị trí thẻ HTML bằng top, left, right, bottom
+
+static                      set position về mặc định                                                        
+                            vô hiệu top, left, right, bottom
+
+relative                    top, left, right, bottom căn chỉnh dựa trên vị trí ban đầu
+
+
+fixed                       cố định vị trí
+                            top, left, right, bottom lấy cạnh màn hình là mốc để căn chỉnh
+
+sticky                      lai giữa relative và fixed
+                            top, left, right, bottom lấy cạnh màn hình là mốc để căn chỉnh
+                            top, left, right, bottom hoạt động như ngưỡng giới hạn
+                            thẻ html di chuyển bình thường, đến khi đạt giới hạn sẽ bị giữ lại
+
+                            lưu ý: sticky trong quan hệ cha con
+
+
+absolute                    căn chỉnh theo quan hệ cha con
+                            thẻ cha có position thì top, left, right, bottom căn theo thẻ cha
+                            nếu thẻ cha không có position thì top, left, right, bottom căn theo màn hình 
+                            %: di chuyển theo kích thước của thẻ cha  
+
+transform: translate(X, Y)  %: di chuyển theo tỷ lệ kích thước của chính nó                            
+
+===========================================================
+lấy code HTML của icon            fontawesome
+
+lấy file css của icon             fontawesome cdn
+
+====================================
+
+hover
+
+trỏ theo quan hệ cha con
+
+cha con {
+  ....
+}
+
+.rightHeader:hover {
+  ...
+}
+
+thẻ có :hover là thể kích hoạt sự kiện
+thẻ đứng cạnh {}        là thẻ nhận stype
+=========================================================================
+bootstrap
+1. setup css gán lên đầu
+         js gán cuối file
+=========================================================================
+reponsive giao diện tương thích đa phương tiện
+
+@media    đóng gói thuộc tính 
+          giải phóng các thuộc tính bên trong nếu đạt đủ yêu cầu 
+=================================================================
+row             chia thành 12 phần bằng nhau
+col-            chiếm chỗ trong 12 phần đó
+==================================================================
+
+

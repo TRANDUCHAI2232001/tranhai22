@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 100%;
+    max-width: none;
+    padding: 0;
+}
+.content{
+    width: 100%;
+}
+.nav{
+    background-color: #f1f1f1;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.Nut{
+    display: none;
+}
+.subnav {
+    font-size: 18px;
+    width: 25%;
+    text-align: center;
+    
+}
+.subnav a{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    padding: 8px 16px;
+    display: block;
+}
+.subnav a:hover{
+    background-color: #ccc;
+}
+.content{
+    max-width: 1100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-content{
+    margin: 16px 0;
+    padding-top: 43px;
+}
+.text-content h1{
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 36px;
+}
+.text-content p{
+    font-size: 15px;
+    margin: 15px 0;
+}
+.text-bannner{
+    color: black;
+    background-color: white;
+    padding: 12px 24px;
+}
+.text1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.text-ad{
+    padding: 64px 0;
+    text-align: center;
+    font-size: 24px;
+}
+.text-ad span{
+    border-bottom: 6px solid black;
+    padding: 16px 0;
+}
+.bot-ad{
+    display: flex;
+}
+.subbot-ad{
+    padding: 16px;
+}
+.subbot-ad h3{
+    font-size: 24px;
+    margin: 10px 0;
+}
+.subbot-ad p{
+    font-size: 15px;
+    margin: 15px 0;
+}
+.text-plans{
+    padding: 64px 0;
+    text-align: center;
+}
+.text-plans h3{
+    margin: 10px 0;
+    font-size: 24px;
+}
+.text-plans p{
+    margin: 15px 0;
+    font-size: 15px;
+}
+.main-plans{
+    display: flex;
+}
+.bang-plans{
+    width: 33.33333%;
+    text-align: center;
+    margin: 0 8px;
+}
+.bang-plans ul{
+    border: 1px solid #ccc;
+    padding-left: 0;
+}
+.bang-plans ul li{
+    list-style-type: none;
+}
+.dong1{
+    padding: 32px 0;
+    color: white;
+    background-color: black;
+    font-size: 24px;
+    border-bottom: 1px solid #ccc;
+}
+.dong2{
+    padding: 8px 16px;
+    font-size: 15px;
+    border-bottom: 1px solid #ccc;
+}
+.dong3{
+    padding: 16px;
+    border-bottom: 1px solid #ccc;
+}
+.dong3 h2{
+    font-size: 30px;
+}
+.dong3 span{
+    font-size: 15px;
+}
+.dong4{
+    padding: 24px 16px;
+    background-color: #f1f1f1;
+}
+.dong4 button{
+    padding: 12px 24px;
+    background-color: #4caf50;
+    color: white;
+    border: none    ;
+}
+.bang-plans ul:hover{
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+.text-about{
+    text-align: center;
+    padding: 64px 0;
+}
+.text-about span{
+    padding: 16px 0;
+    font-size: 24px;
+    border-bottom:6px solid black;
+}
+.main-about{
+    display: flex;
+}
+.giamdoc{
+    padding: 0 8px;
+    margin-bottom: 16px;
+    width: 33.333333%;
+}
+.Member{
+    width: 100%;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    padding-bottom: 15px;
+}
+.Member h3 ,.Member p{
+    padding: 0 16px;
+}
+.Member h3{
+    margin: 10px 0;
+    font-size: 24px;
+}
+.donggancuoi ,.chumau{
+    font-size: 15px;
+    margin: 15px 0;
+}
+.chumau{
+    opacity: 0.6;
+}
+.dongcuoi button{
+    padding: 8px 16px;
+    width: 100%;
+    border: none;
+}
+.dongcuoi button:hover{
+    background-color: #ccc;
+}
+.dongcuoi{
+    text-align: center;
+    margin: 15px 0;
+}
+.nhaptu{
+    margin: 16px 0;
+}
+.nhaptu input{
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+.send{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.send p{
+    padding: 8px 16px;
+}
+.send p:hover{
+    background-color: #ccc;
+    cursor: pointer;
+    color: black;
+}
+@media screen and (max-width:900px) {
+    #nav1{
+        display: block;
+        width: 100%;
+    }
+    .subnav{
+        display: none;
+    }
+    .Nut{
+        display: block;
+    }
+    .bot-ad ,.main-plans ,.main-about{
+        flex-direction: column;
+    }
+    .subbot-ad ,.bang-plans ,.giamdoc{
+        width: 100%;
+    }
+
+}

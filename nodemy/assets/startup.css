@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.8;
+}
+.nav1{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    color: #000;    
+    background-color: white;
+}
+.left-nav{
+    padding: 16px;
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 4px;
+}
+.right-nav a{
+    padding: 16px;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+}
+
+.right-nav a:hover ,.left-nav:hover ,.menu:hover{
+    color: #000;
+    background-color: #ccc;
+}
+.menu{
+    display: none;
+    padding: 16px;
+    color: #000;
+}
+.mobile{
+    display: none;
+}
+.banner{
+    position: relative;
+}
+
+.text-banner{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,-50%);
+    padding: 48px;
+}
+.nut-banner{
+    font-size: 18px;
+    margin-top: 16px;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+}
+.nut-banner:hover{
+    color: #000;
+    background-color: #ccc;
+}
+.icon-banner{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: white;
+    padding: 24px 48px;
+}
+.about{
+    padding: 128px 16px;
+}
+.about-top{
+    margin: 10px 0;
+    font-size: 24px;
+    text-align: center;
+}
+.about-mid{
+    text-align: center;
+    margin: 18px;
+    font-size: 18px;
+}
+.about-bot{
+    display: flex;
+    padding: 0 8px;
+    margin-top: 64px;
+    text-align: center;
+}
+.sub-about{
+    width: 24.999999%;
+    padding: 0 8px;
+}
+.icon-about{
+    margin-bottom: 16px;
+    font-size: 64px;
+}
+.text1-sub-about{
+    font-size: 18px;
+    margin: 18px 0;
+}
+.text2-sub-about{
+    font-size: 15px;
+    margin: 15px 0;
+}
+.design{
+    display: flex;
+    padding: 128px 16px;
+    background-color: #f1f1f1;
+}
+.text-design{
+    width: 49.9999%;
+    padding-left: 16px;
+    padding-right: 8px;
+}
+.img-design{
+    width: 49.99999%;
+    padding-left: 16px;
+    padding-right: 8px;
+}
+.text-design h3{
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: 400;
+}
+.text1-design{
+    margin: 15px 0;
+    font-size: 15px;
+}
+.text1-design a{
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color: #000;
+    color: white;
+    font-size: 15px;
+}
+.text1-design a:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+.team{
+    padding: 128px 16px;
+    text-align: center;
+}
+.team h3{
+    margin: 10px 0;
+    font-size: 24px;
+}
+.team p{
+    margin: 18px 0;
+    font-size: 18px;
+}
+.member{
+    display: flex;
+}
+.member1{
+    margin-top: 64px;
+    padding: 0 8px;
+    width: 25%;
+}
+.member2{
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+.member2 h3{
+    font-size: 24px;
+    margin: 10px 0;
+}
+.member2 p{
+    margin: 15px 0;
+    font-size: 15px;
+}
+.chumo{
+    opacity: 0.6;
+}
+.member2 p button{
+    color: #000;
+    background-color: #f1f1f1;
+    border: none;
+    padding: 8px 16px;
+    width: 100%;
+}
+.member2 p button:hover{
+    color: #000;
+    background-color: #ccc;
+}
+.so-lieu{
+    display: flex;
+    padding: 64px 16px;
+    background-color: #616161;
+    color: #fff;
+}
+.so-lieu1{
+    width: 25%;
+    text-align: center;
+    font-size: 15px;
+}
+.so-lieu1 span{
+    font-size: 36px;
+}
+.work{
+    padding: 128px 16px;
+    text-align: center;
+}
+.work h3{
+    margin: 10px 0;
+    font-size: 24px;
+}
+.work p{
+    margin: 18px 0;
+    font-size: 18px;
+}
+.img-work1{
+    display: flex;
+}
+.img-work2{
+    margin: 16px 0;
+    display: flex;
+}
+.img-work1 div ,.img-work2div{
+    padding: 0 8px;
+    width: 25%;
+}
+.img-work1 div:hover ,.img-work2 div:hover{
+    opacity: 0.6;
+}
+.skills{
+    display: flex;
+    padding: 64px 16px;
+    background-color: #f1f1f1;
+}
+.left-skills{
+    width: 49.99999%;
+    padding-left: 16px;
+    padding-right: 8px;
+}
+.left-skills h3{
+    margin: 10px 0;
+    font-size: 24px;
+}
+.left-skills p{
+    margin: 15px 0;
+    font-size: 24px;
+}
+.right-skills{
+    width: 49.99999%;
+    padding-right: 16px;
+    padding-left: 8px;
+}
+.sub-right-skills{
+    background-color: #616161;
+    text-align: center;
+}
+.right-skills p{
+    margin: 15px 0;
+    font-size: 15px;
+}
+.pricing{
+    text-align: center;
+}
+.sub-pricing{
+    display: flex;
+    margin-top: 64px;
+    padding: 0 8px;
+}
+.sub-pricing1{
+    width: 33.33333%;
+    margin: 16px 0;
+    padding: 0 8px;
+}
+.pricing{
+    padding: 128px 16px;
+    background-color: #616161;
+    color: #fff;
+}
+.sub-pricing1 ul{
+    color: #000;
+    background-color: #fff;
+    list-style-type: none;
+}
+.sub-pricing1 ul li{
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+.sub-pricing1 li button{
+    color: #fff;
+    background-color: #000;
+    padding: 12px 24px;
+    border: none;
+}
+.sub-pricing1 li button:hover{
+    background-color: #ccc;
+    color: #000;
+}
+.contact{
+    padding: 128px 16px;
+    background-color: #f1f1f1;
+    color: #000;
+}
+.send{
+    width: 100%;
+    padding: 8px;
+}
+.main-contact button{
+    padding: 8px 16px;
+    color: white;
+    background-color: #000;
+    border: none;
+}
+.main-contact button:hover{
+    color: #000;
+    background-color: #fff;
+}
+.footer{
+    padding: 64px 0;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+}
+.tothetop{ 
+    color: #000;
+    background-color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+@media screen and (max-width:600px){
+    .desktop{
+        display: none;
+    }
+    .mobile ,.menu{
+        display: block;
+    }
+    .about-bot ,.design ,.member ,.so-lieu ,.img-work1 ,.img-work2 ,.skills ,.sub-pricing{
+        flex-direction: column;
+    }
+    .sub-about ,.text-design ,.img-design ,.member1 ,.so-lieu1 ,.img-work1 div ,.img-work2 div,.left-skills ,.right-skills ,.sub-pricing1{
+        width: 100%;
+    }
+}

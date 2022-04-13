@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+.header{
+    display: flex;
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+}
+.logo{
+    width: 10%;
+}
+.leftheader{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    width: 90%;
+}
+.nav{
+    display: flex;
+    color: #fff;
+}
+.nav div{
+    padding: 32px 50px;
+}
+.nav div:hover {
+    color: #000;
+    background-color: slategray;
+    cursor: pointer;
+}
+.subnav{
+    position: relative;
+}
+.list{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    background-color:slategray ;
+    display: none;
+}
+.list li{
+    width: 163.78px;
+    padding: 8px 16px;
+    text-align: center;
+    
+}
+.list li:hover{
+    background-color:darkolivegreen;
+    cursor: pointer;
+}
+.subnav:hover .list{
+    display: block;
+}
+.rightheader{
+    display: flex;
+    color: #fff;
+}
+.rightheader div{
+    padding: 32px 50px; 
+}
+.icon1{
+    padding-right: 30px;
+}
+.icon2{
+    padding-left: 30px;
+}
+.rightheader div:hover{
+    background-color: red;
+}
+.banner{
+    height: 580px;
+    position: relative;
+    padding-top: 80px;
+}
+.text-banner{
+    position: absolute;
+    bottom: 0;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.maincontent{
+    background-color: steelblue;
+    
+}
+.collection1{
+    display: flex;
+
+}
+.content > p{
+    font-size: 30px;
+    text-align: center;
+    color:#000;
+    padding: 30px 0;
+}
+.collection1 div ,.collection2 div ,.collection3 div{
+    width: 25%;
+    color: #000;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    position: relative;
+}
+.sale {
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+.collection3 > div > .sale{
+    position: absolute;
+    top: 0;
+    left: 0px;
+}
+.collection2{
+    padding-top: 50px;
+    display: flex;
+}
+.collection3{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.about{
+    padding-top: 50px;
+    text-align: center;
+}
+.contact{
+    padding: 50px;
+    text-align: center;
+}
+.icon-footer{
+    font-size: 30px;
+    padding: 0 10px;
+
+}
